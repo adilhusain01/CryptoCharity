@@ -1,7 +1,7 @@
 import { useWallet } from '../contexts/WalletContext';
 import { Heart, Wallet } from 'lucide-react';
 
-export const Navbar = () => {
+const Navbar = () => {
   const { account, connectWallet } = useWallet();
 
   return (
@@ -28,3 +28,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
