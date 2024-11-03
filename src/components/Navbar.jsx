@@ -1,4 +1,3 @@
-import React from 'react';
 import { useWallet } from '../contexts/WalletContext';
 import { Heart, Wallet } from 'lucide-react';
 
