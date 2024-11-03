@@ -1,0 +1,1 @@
+The Decentralized Charity Donation Platform enables individuals to donate cryptocurrency directly to verified charities, ensuring transparency and reducing fraud. By utilizing blockchain, each donation is publicly traceable, giving donors confidence in how their contributions are used.
