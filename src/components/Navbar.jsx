@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={connectWallet}
-            className='flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200'
+            className='flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 text-white px-6 py-2 rounded-full transition-colors duration-200'
           >
             <Wallet className='h-4 w-4' />
             <span>

@@ -38,7 +38,7 @@ const CharityRegistration = () => {
           />
           <button
             type='submit'
-            className='w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all font-medium'
+            className='w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all font-medium'
           >
             Register Charity
           </button>
