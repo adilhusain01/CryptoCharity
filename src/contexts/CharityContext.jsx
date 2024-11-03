@@ -48,7 +48,7 @@ export const CharityProvider = ({ children }) => {
           const donations = await contractInstance.getDonationAmount(address);
           return {
             address,
-            donations: ethers.formatEther(donations),
+            donations: ethers.utils.formatEther(donations),
           };
         })
       );
@@ -60,7 +60,7 @@ export const CharityProvider = ({ children }) => {
   };
 
   const registerCharity = async (address) => {
-    if (!ethers.isAddress(address)) {
+    if (!ethers.utils.isAddress(address)) {
       setStatus('Invalid charity address');
       return;
     }
@@ -85,7 +85,7 @@ export const CharityProvider = ({ children }) => {
 
     try {
       setStatus('Processing donation...');
-      const amountInWei = ethers.parseEther(amount);
+      const amountInWei = ethers.utils.parseEther(amount);
       const tx = await contract.donate(charityAddress, { value: amountInWei });
       await tx.wait();
       setStatus('Donation successful!');
